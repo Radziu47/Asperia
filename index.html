@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="eи">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.C.O Informations</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="headerContent">
+                <div class="logo">logo place<wbr>holder</div>
+                <div class="searchBar">
+                    <form action="" method="get">
+                        <input type="text" class="searchInput" placeholder="Search" oninput="checkInput(this)">
+                        <button type="submit" class="searchButton" disabled>Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="smallNav"></div>
+        </header>
+        <div class="navBar">
+            <h3>Heading</h3>
+            <ul>
+                <li><a href="#">test1</a></li>
+                <li><a href="#">test1</a></li>
+                <li><a href="#">test1</a></li>
+            </ul>
+            <h3>Heading2</h3>
+            <ul>
+                <li><a href="#">test1</a></li>
+                <li><a href="#">test1</a></li>
+                <li><a href="#">test1</a></li>
+            </ul>
+            <h3>Heading3</h3>
+            <ul>
+                <li><a href="#">test1</a></li>
+                <li><a href="#">test1</a></li>
+                <li><a href="#">test1</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    
+
+function checkInput(thisElement) {
+    if(thisElement.value !== null && thisElement.value !== ""){
+        $(".searchButton").prop("disabled", false);
+    }else{
+        $(".searchButton").prop("disabled", true);
+    }
+}
+
+
+</script>

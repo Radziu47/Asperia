@@ -1,0 +1,96 @@
+:root{
+    --mainColor: rgb(41, 36, 36);
+    --secondaryColor: rgb(255, 174, 0);
+    --secondaryLightColor: rgb(255, 208, 106);
+    --mainSupportiveColor: rgb(0, 0, 0);
+    --secondarySupportiveColor: rgb(235, 235, 235);
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-areas: 
+    "header header header header header"
+    "navbar main main main main"
+    "navbar main main main main"
+    "navbar main main main main"
+    "navbar main main main main"
+    "footer footer footer footer footer";
+    grid-template-columns: 200px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 1fr 1fr 1fr 1fr 5vh;
+}
+
+.header{
+    grid-area: header;
+    background-color: var(--mainColor);
+    position: sticky;
+}
+
+.headerContent{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+    background-color: red;
+    height: 80px;
+    width: 80px
+}
+
+.searchBar > .searchButton{
+    outline: none;
+    border: 1px solid var(--secondarySupportiveColor);
+    background-color: var(--secondaryColor);
+}
+.searchBar > .searchButton:active{
+    background-color: var(--secondaryLightColor);
+}
+
+.smallNav{
+    background-color: var(--mainSupportiveColor);
+    height: 3vh;
+    width: 100%;
+}
+
+.navBar{
+    margin-top: 3vh;
+    background-color: var(--secondaryColor);
+    grid-area: navbar;
+    display: flex;
+    flex-direction: column;
+}
+
+.navBar > *{
+    margin-left: 45%;
+    transform: translateX(-50%);
+}
+
+.navBar a, .navBar a:link, .navBar a:visited{
+    text-decoration-color: rgba(255, 255, 255, 0);
+    text-underline-offset: 2px;
+    color: white;
+    transition: 300ms ease-in-out;
+    transition-property: text-decoration-color;
+}
+
+.navBar > ul{
+    list-style-type: circle;
+}
+
+.navBar a:hover{
+    text-decoration-color: rgba(255, 255, 255, 1);
+}
