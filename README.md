@@ -24,4 +24,17 @@ I use this universe in my book (name like projekct title).
 | 4 | End and publicate book     |    ❌  |
 | 5 | Fix HTML and CSS           |    ❌  |
 
+ZH.
+你好。这个项目是我的宇宙的维基。
+我在我的书中使用它（名称如项目名称）
+
+|   | List                       | Status |
+|---|----------------------------|:------:|
+| 1 | 完成 HTML 和 CSS             |    ❌  |
+| 2 | 添加到基础的连接             |    ❌  |
+| 3 | 更多语言                   |    ❌  |
+| 4 | 写一本书并出版             |    ❌  |
+| 5 | 修复 HTML 和 CSS          |    ❌  |
+
+
 
