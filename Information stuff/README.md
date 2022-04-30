@@ -9,7 +9,7 @@ Uzywam go w mojej ksiązce (nazwa jak nazwa projektu).
 | 1 | Skończyć HTML I CSS        |    ❌  |
 | 2 | Dodać połączenie do bazy   |    ❌  |
 | 3 | Napisać i wydać książkę    |    ❌  |
-| 4 | Pobrawić HTML I CSS          |    ❌  |
+| 4 | Poprawić HTML I CSS          |    ❌  |
 
 ENG.
 Hi. This project is a wiki for my universe. 
