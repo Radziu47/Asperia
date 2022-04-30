@@ -1,0 +1,35 @@
+[
+{"type":"header","version":"5.0.4","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"asperia"},
+{"type":"table","name":"demony_eng","database":"asperia","data":
+[
+{"id":"1","Nazwa":"Succubus demom","Pozycja":"Sin","Wpływ":"6","Kontrola":"1","Zagrozenie":"4","Opis":"Succubus demon, is living inside a body of dead nun. Usually seen with Cat and Gluttony demon. It is very  active, perverted and \r\nunpredictable. The name origin coms from a very skimpy clothes, which is imposed by the demon.","Code":null},
+{"id":"2","Nazwa":"Greed demon","Pozycja":"Sin","Wpływ":"3","Kontrola":"3","Zagrozenie":"4","Opis":null,"Code":null},
+{"id":"3","Nazwa":"Conceit demon","Pozycja":"Sin","Wpływ":"6","Kontrola":"6","Zagrozenie":"2","Opis":null,"Code":null},
+{"id":"4","Nazwa":"Gluttony demon\r\n\r\n","Pozycja":"Sin","Wpływ":"2","Kontrola":"6","Zagrozenie":"5","Opis":"Gluttony demon is usually 3m high, muscular humanoid creature, with big jaw. Usually is seen with Succubus and Cat demon. After eating any amount of meat, he can use it to modify his body.","Code":null},
+{"id":"5","Nazwa":"Faith demon","Pozycja":"Sin","Wpływ":"0","Kontrola":"6","Zagrozenie":"4","Opis":"Faith the demon gives Vassal the possibility of absolute speech, which makes everything he says come true. Condition 1: The person must see and hear the demon uttering these words.","Code":null},
+{"id":"6","Nazwa":"Kill demon","Pozycja":"Sin","Wpływ":"0","Kontrola":"6","Zagrozenie":"4","Opis":"The demon's kill user kills anything that comes in contact with his left hand from fingers to elbow.","Code":null},
+{"id":"7","Nazwa":"Marionet demon ","Pozycja":"Sin","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"8","Nazwa":"Thunder demon","Pozycja":"Demon","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"9","Nazwa":"Meat demon ","Pozycja":"Demon","Wpływ":"1","Kontrola":"4","Zagrozenie":"3","Opis":"The meat demon can modify the body structure of whomever it touches.","Code":null},
+{"id":"10","Nazwa":"Soul demon","Pozycja":"Demon","Wpływ":"4","Kontrola":"5","Zagrozenie":"4","Opis":"It absorbs the souls of the people it kills. And he uses them to strengthen himself","Code":null},
+{"id":"11","Nazwa":"Origami demon","Pozycja":"Demon","Wpływ":"0","Kontrola":"5","Zagrozenie":"1","Opis":"Origami demon summons paper origami. Which enables him to use them in combat. By keeping the paper in sight, the pets can reach enormous sizes.","Code":null},
+{"id":"12","Nazwa":"Spider demon","Pozycja":"Demon","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"13","Nazwa":"Fire demon","Pozycja":"Demon","Wpływ":"6","Kontrola":"0","Zagrozenie":"3","Opis":"The fire demon is a humanoid on fire. Controlling fire around you.","Code":null},
+{"id":"14","Nazwa":"Sword demon","Pozycja":"Demon","Wpływ":"2","Kontrola":"3","Zagrozenie":"3","Opis":null,"Code":null},
+{"id":"15","Nazwa":"Water demon","Pozycja":"Demon","Wpływ":"0","Kontrola":null,"Zagrozenie":"2","Opis":"The Water Demon is a 6-handed humanoid shark. It has the ability to turn your hands into steel harpoons","Code":null},
+{"id":"16","Nazwa":"Wolf Demon","Pozycja":"Demon","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"17","Nazwa":"Blood demon","Pozycja":"Demon","Wpływ":"1","Kontrola":"3","Zagrozenie":"4","Opis":"Blood demon is a skeleton that has a vortex of blood instead of legs. And depending on the sex of the holder: M) blood flowing from the eye sockets. K) Hair of blood","Code":null},
+{"id":"18","Nazwa":"Dream demon","Pozycja":"Demon","Wpływ":"0","Kontrola":"6","Zagrozenie":"0","Opis":"Dream demon allows you to influence what the chosen rational being dreams about","Code":null},
+{"id":"19","Nazwa":"Steel demon","Pozycja":"Demon","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"20","Nazwa":"Cat demon","Pozycja":"Demon","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"21","Nazwa":"Torture demon","Pozycja":"Demon","Wpływ":"4","Kontrola":"2","Zagrozenie":"4","Opis":"Torture demon, allows you to see the most effective way to torture a given creature. On top of that, torture is more painful.","Code":null},
+{"id":"22","Nazwa":"Lotus demon","Pozycja":"Demon","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"23","Nazwa":"Time demon","Pozycja":"Demon","Wpływ":"0","Kontrola":"1","Zagrozenie":"4","Opis":"User can travel through time affecting the continuity of the timeline.","Code":null},
+{"id":"24","Nazwa":"Imortal demon","Pozycja":"Made","Wpływ":"0","Kontrola":"6","Zagrozenie":"4","Opis":"Immortal demon is a demon created artificially to give the user immediate regeneration and complete negation of pain.","Code":null},
+{"id":"25","Nazwa":"Technology demon","Pozycja":"Made","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"666","Nazwa":"Emperor demon","Pozycja":"Devil","Wpływ":"6","Kontrola":"0","Zagrozenie":"5","Opis":"The first demon in existence, the King of Hell. For observed for the first and only time in Norway, in the city of Kirkenes. Everything that is considered life died instantly within 1km of the place of its appearance.\r\n\r\nPs. He likes peanut butter pancakes.","Code":"4829"},
+{"id":"999","Nazwa":"Empress demon","Pozycja":"Devil","Wpływ":"6","Kontrola":"0","Zagrozenie":"5","Opis":null,"Code":"8207"}
+]
+}
+]
