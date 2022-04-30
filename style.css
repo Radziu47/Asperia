@@ -24,19 +24,20 @@ body{
 .containerMain{
     display: grid;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     grid-template-areas: 
     "header header header header header"
     "navbar main main main main"
     "navbar main main main main"
     "navbar main main main main"
-    ". main main main main"
+    "navbar main main main main"
     "footer footer footer footer footer";
     grid-template-columns: .5fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 10vh 1fr 1fr 2fr 1fr 10vh;
 }
 
 .header{
+    top: 0;
     grid-area: header;
     background-color: var(--mainColor);
     position: sticky;
@@ -65,9 +66,27 @@ body{
     background-color: var(--secondaryLightColor);
 }
 
-.searchBar img{
-    width: auto;
-    height: 30px;
+/* .langContainer img{
+    margin-left: 20px;
+    width: 200px;
+    height: 50px;
+    vertical-align: middle;
+    border-radius: 50%
+} */
+
+.langContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.langImgContainer{
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 .smallNav{
@@ -78,6 +97,7 @@ body{
 
 .navBar{
     overflow-y: auto;
+    overflow-x: hidden;
     min-width: 150px;
     margin-top: 3vh;
     background-color: var(--secondaryColor);

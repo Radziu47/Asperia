@@ -18,14 +18,20 @@
                         <form action="" method="get">
                             <input type="text" class="searchInput" placeholder="Search" oninput="checkInput(this)">
                             <button type="submit" class="searchButton" disabled>Search</button>
-                            <label for="lang"><img src="https://i.kym-cdn.com/photos/images/facebook/001/966/703/359.jpg" alt=""> Language</label>
-                            <select name="lang" id="lang">
-                                <option value="volvo">Polish</option>
-                                <option value="saab">English</option>
-                                <option value="mercedes">Mandarin</option>
-                                <option value="audi">Spanish</option>
-                              </select>
                         </form>
+                    </div>
+                    <div class="langContainer">
+                        <div class="langImgContainer">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1200px-Flag_of_Poland.svg.png" alt="" id="langImg">
+                        </div>
+                        <label for="lang">Language
+                        <select name="lang" id="lang" onchange="changeLang(this)">
+                            <option value="Polish">Polish</option>
+                            <option value="English">English</option>
+                            <option value="Mandarin">Mandarin</option>
+                            <option value="Spanish">Spanish</option>
+                        </select>
+                        </label>
                     </div>
                 </div>
                 <div class="smallNav"></div>
@@ -67,15 +73,37 @@
 </body>
 
 </html>
-
 <script>
     
-
-function checkInput(thisElement) {
+    function checkInput(thisElement) {
     if(thisElement.value !== null && thisElement.value !== ""){
         $(".searchButton").prop("disabled", false);
     }else{
         $(".searchButton").prop("disabled", true);
+    }
+}
+
+// function changeLang(thisElement) {
+//     if (thisElement.value == "Polish") {
+//         $("#langImg").attr("src", "https://preview.redd.it/3ptjjx7k8jy51.png?width=440&format=png&auto=webp&s=a219b729ae0512f6f0eccf57211a3e9bac07130b")
+//     }else if (thisElement.value == "English") {
+//         $("#langImg").attr("src", "https://learnenglishteens.britishcouncil.org/sites/teens/files/styles/article/public/istock_000020059921small_0_0_1.jpg?itok=Bs-akrAV")
+//     }else if (thisElement.value == "Mandarin") {
+//         $("#langImg").attr("src", "https://produits.bienmanger.com/34091-0w0h0_Organic_Fresh_Mandarin.jpg")
+//     }else if (thisElement.value == "Spanish") {
+//         $("#langImg").attr("src", "https://m.media-amazon.com/images/I/61FDjsfnkML._AC_UX385_.jpg")        
+//     }
+// }
+
+function changeLang(thisElement) {
+    if (thisElement.value == "Polish") {
+        $("#langImg").attr("src", "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1200px-Flag_of_Poland.svg.png")
+    }else if (thisElement.value == "English") {
+        $("#langImg").attr("src", "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png")
+    }else if (thisElement.value == "Mandarin") {
+        $("#langImg").attr("src", "https://cdn.britannica.com/90/7490-004-BAD4AA72/Flag-China.jpg")
+    }else if (thisElement.value == "Spanish") {
+        $("#langImg").attr("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/2560px-Flag_of_Spain.svg.png")        
     }
 }
 
