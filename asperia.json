@@ -1,0 +1,35 @@
+[
+{"type":"header","version":"5.0.4","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"asperia"},
+{"type":"table","name":"demony","database":"asperia","data":
+[
+{"id":"1","Nazwa":"Succubus demom","Pozycja":"Sin","Wpływ":"6","Kontrola":"1","Zagrozenie":"4","Opis":"Succubus demon, zamieszkuje ciało martwej zakonnicy. Zazwyczaj widywany w towarzystwie Cat i Gluttony demona. Jest strasznie pobudliwy, perwerysyjny i nieprzewidywalny. Nazwa wywodzi się z skąpego ubrania, które jest naurzucone przez demona.","Code":null},
+{"id":"2","Nazwa":"Greed demon","Pozycja":"Sin","Wpływ":"3","Kontrola":"3","Zagrozenie":"4","Opis":null,"Code":null},
+{"id":"3","Nazwa":"Conceit demon","Pozycja":"Sin","Wpływ":"6","Kontrola":"6","Zagrozenie":"2","Opis":null,"Code":null},
+{"id":"4","Nazwa":"Gluttony demon","Pozycja":"Sin","Wpływ":"2","Kontrola":"6","Zagrozenie":"5","Opis":"Gluttony demon to zazwyczaj 3m umięśnione humanoidalne stworzenie, z wielkimi szczękami. Zazwyczaj widywany z Succubus i Cat demonem. Po zjedzeniu dowolnej ilości mięsa, może go użyć do zmodyfikowania swojego ciała.","Code":null},
+{"id":"5","Nazwa":"Faith demon","Pozycja":"Sin","Wpływ":"0","Kontrola":"6","Zagrozenie":"4","Opis":"Faith demon daje Vassalowi, możliwośc mowy absolutnej, która sprawia że wszystko co powie staje się prawdą. Pod 2 warunkami: 1)Nie może być nagraniem. 2) Jeśli jest kierowany do danej osoby musi ona widzieć i słyszeć jak demon wypowiada te słowa. ","Code":null},
+{"id":"6","Nazwa":"Kill demon","Pozycja":"Sin","Wpływ":"0","Kontrola":"6","Zagrozenie":"4","Opis":"Użytkownik Kill demona, zabija wszystko co weszło w kontakt, z jego lewą ręką od palców do łokcia.","Code":null},
+{"id":"7","Nazwa":"Marionet demon ","Pozycja":"Sin","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"8","Nazwa":"Thunder demon","Pozycja":"Demon","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"9","Nazwa":"Meat demon ","Pozycja":"Demon","Wpływ":"1","Kontrola":"4","Zagrozenie":"3","Opis":"Meat demon potrafi modyfikować strukturę twojego ciała.","Code":null},
+{"id":"10","Nazwa":"Soul demon","Pozycja":"Demon","Wpływ":"4","Kontrola":"5","Zagrozenie":"4","Opis":"Pochłania dusze ludzi, których zabije. I używa ich do zmocnienia samego siebie","Code":null},
+{"id":"11","Nazwa":"Origami demon","Pozycja":"Demon","Wpływ":"0","Kontrola":"5","Zagrozenie":"1","Opis":"Origami demon przywołuje papierowe origami. Co umożliwia mu używanie ich w walce. Przez wykorzystywanie papieru w zasięgu wzroku, przywołańce mogą osiągać olbrzymie wielkości.","Code":null},
+{"id":"12","Nazwa":"Spider demon","Pozycja":"Demon","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"13","Nazwa":"Fire demon","Pozycja":"Demon","Wpływ":"6","Kontrola":"0","Zagrozenie":"3","Opis":"Fire demon, do palący się humanoid. Kontrolujący ogień wokół siebie.","Code":null},
+{"id":"14","Nazwa":"Sword demon","Pozycja":"Demon","Wpływ":"2","Kontrola":"3","Zagrozenie":"3","Opis":null,"Code":null},
+{"id":"15","Nazwa":"Water demon","Pozycja":"Demon","Wpływ":"0","Kontrola":null,"Zagrozenie":"2","Opis":"Water demon to humanoidalny rekin, o 6 rękach. Posiada możliwość, zamiany rąk w stalowe harpuny","Code":null},
+{"id":"16","Nazwa":"Wolf Demon","Pozycja":"Demon","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"17","Nazwa":"Blood demon","Pozycja":"Demon","Wpływ":"1","Kontrola":"3","Zagrozenie":"4","Opis":"Blood demon, to szkielet, który posiada wir z krwi zamiast nóg. I w zależności od płci posiadacza: M) krew wypływającą z oczodołów. K) Włosy z krwi","Code":null},
+{"id":"18","Nazwa":"Dream demon","Pozycja":"Demon","Wpływ":"0","Kontrola":"6","Zagrozenie":"0","Opis":"Dream demon, pozwala wpływać na to o czym śni wybrana istota rozumna","Code":null},
+{"id":"19","Nazwa":"Steel demon","Pozycja":"Demon","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"20","Nazwa":"Cat demon","Pozycja":"Demon","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"21","Nazwa":"Torture demon","Pozycja":"Demon","Wpływ":"4","Kontrola":"2","Zagrozenie":"4","Opis":"Torture demon, pozwala zobaczyć w jak najbardziej efektywny sposób torturować daną istotę. Do tego tortury, są bardziej bolesne.","Code":null},
+{"id":"22","Nazwa":"Lotus demon","Pozycja":"Demon","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"23","Nazwa":"Time demon","Pozycja":"Demon","Wpływ":"0","Kontrola":"1","Zagrozenie":"4","Opis":"Użytkownik może podróżować w czasie wpływając na ciągłość linii czasowej. ","Code":null},
+{"id":"24","Nazwa":"Imortal demon","Pozycja":"Made","Wpływ":"0","Kontrola":"6","Zagrozenie":"4","Opis":"Immortal demon to demon stworzony sztucznie, by dać użytkownikowi natychmiastową regeneracje, i całkowitą negacje bólu.","Code":null},
+{"id":"25","Nazwa":"Technology demon","Pozycja":"Made","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"666","Nazwa":"Emperor demon","Pozycja":"Devil","Wpływ":"6","Kontrola":"0","Zagrozenie":"5","Opis":"Pierwszy istniejący demon, król Piekła.  Za obserwowany pierwszy i jedyny raz w Norwegii, w mieście Kirkenes. Wszystko co uznawane za życie umarło, natychmiastowo w obrębie 1km, od miejsca pojawienia się.\r\n\r\nPs. Lubi placki z masłem orzechowym.","Code":"4829"},
+{"id":"999","Nazwa":"Empress demon","Pozycja":"Devil","Wpływ":"6","Kontrola":"0","Zagrozenie":"5","Opis":null,"Code":"8207"}
+]
+}
+]
