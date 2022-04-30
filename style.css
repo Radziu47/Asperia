@@ -14,21 +14,26 @@ body{
     margin: 0;
     padding: 0;
     color: white;
+    /* background-color: var(--secondarySupportiveColor); */
 }
 
-.container{
+.rounded{
+    border-radius: 10px;
+}
+
+.containerMain{
     display: grid;
     width: 100%;
-    height: auto;
+    height: 100vh;
     grid-template-areas: 
     "header header header header header"
     "navbar main main main main"
     "navbar main main main main"
     "navbar main main main main"
-    "navbar main main main main"
+    ". main main main main"
     "footer footer footer footer footer";
-    grid-template-columns: 200px 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10vh 1fr 1fr 1fr 1fr 5vh;
+    grid-template-columns: .5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 1fr 1fr 2fr 1fr 10vh;
 }
 
 .header{
@@ -60,6 +65,11 @@ body{
     background-color: var(--secondaryLightColor);
 }
 
+.searchBar img{
+    width: auto;
+    height: 30px;
+}
+
 .smallNav{
     background-color: var(--mainSupportiveColor);
     height: 3vh;
@@ -67,6 +77,8 @@ body{
 }
 
 .navBar{
+    overflow-y: auto;
+    min-width: 150px;
     margin-top: 3vh;
     background-color: var(--secondaryColor);
     grid-area: navbar;
@@ -75,8 +87,8 @@ body{
 }
 
 .navBar > *{
-    margin-left: 45%;
-    transform: translateX(-50%);
+    align-self: flex-start;
+    margin-left: 10px;
 }
 
 .navBar a, .navBar a:link, .navBar a:visited{
@@ -93,4 +105,23 @@ body{
 
 .navBar a:hover{
     text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+.main{
+    margin-top: 3vh;
+    grid-area: main;
+    background-color: var(--secondarySupportiveColor);
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--mainSupportiveColor);
+}
+
+.footer a, .footer a:link, .footer.visited{
+    color: var(--secondaryLightColor);
 }

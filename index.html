@@ -10,37 +10,58 @@
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <div class="headerContent">
-                <div class="logo">logo place<wbr>holder</div>
-                <div class="searchBar">
-                    <form action="" method="get">
-                        <input type="text" class="searchInput" placeholder="Search" oninput="checkInput(this)">
-                        <button type="submit" class="searchButton" disabled>Search</button>
-                    </form>
+        <div class="containerMain">
+            <header class="header">
+                <div class="headerContent">
+                    <div class="logo">logo place<wbr>holder</div>
+                    <div class="searchBar">
+                        <form action="" method="get">
+                            <input type="text" class="searchInput" placeholder="Search" oninput="checkInput(this)">
+                            <button type="submit" class="searchButton" disabled>Search</button>
+                            <label for="lang"><img src="https://i.kym-cdn.com/photos/images/facebook/001/966/703/359.jpg" alt=""> Language</label>
+                            <select name="lang" id="lang">
+                                <option value="volvo">Polish</option>
+                                <option value="saab">English</option>
+                                <option value="mercedes">Mandarin</option>
+                                <option value="audi">Spanish</option>
+                              </select>
+                        </form>
+                    </div>
                 </div>
+                <div class="smallNav"></div>
+            </header>
+            <div class="navBar rounded">
+                <h3>Heading</h3>
+                <ul>
+                    <li><a href="#">test1</a></li>
+                    <li><a href="#">test1</a></li>
+                    <li><a href="#">test1</a></li>
+                </ul>
+                <h3>Heading2</h3>
+                <ul>
+                    <li><a href="#">test1</a></li>
+                    <li><a href="#">test1</a></li>
+                    <li><a href="#">test1</a></li>
+                </ul>
+                <h3>Heading3</h3>
+                <ul>
+                    <li><a href="#">test1</a></li>
+                    <li><a href="#">test1</a></li>
+                    <li><a href="#">test1</a></li>
+                </ul>
+                <h3>Heading4</h3>
+                <ul>
+                    <li><a href="#">test1eeeeeeeeee</a></li>
+                    <li><a href="#">test1</a></li>
+                    <li><a href="#">test1</a></li>
+                </ul>
             </div>
-            <div class="smallNav"></div>
-        </header>
-        <div class="navBar">
-            <h3>Heading</h3>
-            <ul>
-                <li><a href="#">test1</a></li>
-                <li><a href="#">test1</a></li>
-                <li><a href="#">test1</a></li>
-            </ul>
-            <h3>Heading2</h3>
-            <ul>
-                <li><a href="#">test1</a></li>
-                <li><a href="#">test1</a></li>
-                <li><a href="#">test1</a></li>
-            </ul>
-            <h3>Heading3</h3>
-            <ul>
-                <li><a href="#">test1</a></li>
-                <li><a href="#">test1</a></li>
-                <li><a href="#">test1</a></li>
-            </ul>
+            <div class="main rounded"></div>
+            <footer class="footer">
+                <a href="https://github.com/Radziu47/Asperia">My project on GitHub</a>
+                <a href="https://github.com/NukieGIT">My friend's GitHub</a>
+                <a href="https://nukiegit.github.io/rock-paper-scissors/">RPS</a>
+            </footer>
         </div>
     </div>
 </body>
