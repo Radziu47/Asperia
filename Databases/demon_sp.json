@@ -1,0 +1,35 @@
+[
+{"type":"header","version":"5.0.4","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"asperia"},
+{"type":"table","name":"demony_sp","database":"asperia","data":
+[
+{"id":"1","Nazwa":"Succubus demom","Pozycja":"Sin","Wpływ":"6","Kontrola":"1","Zagrozenie":"4","Opis":"Demonio súcubo, habitando el cuerpo de una monja muerta. Por lo general, se ve con el gato y los glotones del demonio. Es terriblemente excitable, perverso e impredecible. El nombre deriva de la ropa escasa que un demonio le enseña al anfitrión.","Code":null},
+{"id":"2","Nazwa":"Greed demon","Pozycja":"Sin","Wpływ":"3","Kontrola":"3","Zagrozenie":"4","Opis":null,"Code":null},
+{"id":"3","Nazwa":"Conceit demon","Pozycja":"Sin","Wpływ":"6","Kontrola":"6","Zagrozenie":"2","Opis":null,"Code":null},
+{"id":"4","Nazwa":"Gluttony demon","Pozycja":"Sin","Wpływ":"2","Kontrola":"6","Zagrozenie":"5","Opis":"El demonio de la glotonería es típicamente una criatura humanoide musculosa de 3 m con una enorme mandíbula. Usualmente visto con Succubus y Cat como un demonio. Después de comer cualquier cantidad de carne, puede usarla para modificar su cuerpo.","Code":null},
+{"id":"5","Nazwa":"Faith demon","Pozycja":"Sin","Wpływ":"0","Kontrola":"6","Zagrozenie":"4","Opis":"Faith, el demonio, le da a Vassal la posibilidad de un discurso absoluto que hace que todo lo que dice se convierta en verdad. Condición 1: La persona debe ver y escuchar al demonio pronunciar estas palabras.","Code":null},
+{"id":"6","Nazwa":"Kill demon","Pozycja":"Sin","Wpływ":"0","Kontrola":"6","Zagrozenie":"4","Opis":"El usuario de matar del demonio mata cualquier cosa que entre en contacto con su mano izquierda desde los dedos hasta el codo.","Code":null},
+{"id":"7","Nazwa":"Marionet demon ","Pozycja":"Sin","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"8","Nazwa":"Thunder demon","Pozycja":"Demon","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"9","Nazwa":"Meat demon ","Pozycja":"Demon","Wpływ":"1","Kontrola":"4","Zagrozenie":"3","Opis":"El demonio de la carne puede modificar la estructura del cuerpo de quien toca.","Code":null},
+{"id":"10","Nazwa":"Soul demon","Pozycja":"Demon","Wpływ":"4","Kontrola":"5","Zagrozenie":"4","Opis":"Absorbe las almas de las personas que mata. Y los usa para empoderarse","Code":null},
+{"id":"11","Nazwa":"Origami demon","Pozycja":"Demon","Wpływ":"0","Kontrola":"5","Zagrozenie":"1","Opis":"Demonio de origami convoca origami de papel. Lo que le permite usarlos en combate. Manteniendo el papel a la vista, las mascotas pueden alcanzar tamaños descomunales.","Code":null},
+{"id":"12","Nazwa":"Spider demon","Pozycja":"Demon","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"13","Nazwa":"Fire demon","Pozycja":"Demon","Wpływ":"6","Kontrola":"0","Zagrozenie":"3","Opis":"El demonio de fuego es un humanoide en llamas. Controlando el fuego a tu alrededor.","Code":null},
+{"id":"14","Nazwa":"Sword demon","Pozycja":"Demon","Wpływ":"2","Kontrola":"3","Zagrozenie":"3","Opis":null,"Code":null},
+{"id":"15","Nazwa":"Water demon","Pozycja":"Demon","Wpływ":"0","Kontrola":null,"Zagrozenie":"2","Opis":"El demonio de agua es un tiburón humanoide de 6 manos. Tiene la capacidad de convertir tus manos en arpones de acero.","Code":null},
+{"id":"16","Nazwa":"Wolf Demon","Pozycja":"Demon","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"17","Nazwa":"Blood demon","Pozycja":"Demon","Wpływ":"1","Kontrola":"3","Zagrozenie":"4","Opis":"El demonio de sangre es un esqueleto que tiene un vórtice de sangre en lugar de piernas. Y según el sexo del titular: M) Sangre que brota de las cuencas de los ojos. K) Cabello de sangre","Code":null},
+{"id":"18","Nazwa":"Dream demon","Pozycja":"Demon","Wpływ":"0","Kontrola":"6","Zagrozenie":"0","Opis":"El demonio de los sueños te permite influir en lo que sueña el ser racional elegido","Code":null},
+{"id":"19","Nazwa":"Steel demon","Pozycja":"Demon","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"20","Nazwa":"Cat demon","Pozycja":"Demon","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"21","Nazwa":"Torture demon","Pozycja":"Demon","Wpływ":"4","Kontrola":"2","Zagrozenie":"4","Opis":"Demonio de tortura, te permite ver la forma más efectiva de torturar a una criatura determinada. Además de eso, la tortura es más dolorosa.","Code":null},
+{"id":"22","Nazwa":"Lotus demon","Pozycja":"Demon","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"23","Nazwa":"Time demon","Pozycja":"Demon","Wpływ":"0","Kontrola":"1","Zagrozenie":"4","Opis":"El usuario puede viajar en el tiempo afectando la continuidad de la línea de tiempo.","Code":null},
+{"id":"24","Nazwa":"Imortal demon","Pozycja":"Made","Wpływ":"0","Kontrola":"6","Zagrozenie":"4","Opis":"El demonio inmortal es un demonio creado artificialmente para brindarle al usuario una regeneración inmediata y una negación completa del dolor.","Code":null},
+{"id":"25","Nazwa":"Technology demon","Pozycja":"Made","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"666","Nazwa":"Emperor demon","Pozycja":"Devil","Wpływ":"6","Kontrola":"0","Zagrozenie":"5","Opis":"El primer demonio en existencia, el Rey del Infierno. Pues observado por primera y única vez en Noruega, en la ciudad de Kirkenes. Todo lo que se considera vida murió instantáneamente a menos de 1 km del lugar de su aparición.\r\n\r\nPD. Le gustan los panqueques de mantequilla de maní.","Code":"4829"},
+{"id":"999","Nazwa":"Empress demon","Pozycja":"Devil","Wpływ":"6","Kontrola":"0","Zagrozenie":"5","Opis":null,"Code":"8207"}
+]
+}
+]

@@ -1,0 +1,35 @@
+[
+{"type":"header","version":"5.0.4","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"asperia"},
+{"type":"table","name":"demony_zh","database":"asperia","data":
+[
+{"id":"1","Nazwa":"魅魔恶魔","Pozycja":" 罪","Wpływ":"0","Kontrola":"1","Zagrozenie":"4","Opis":"魅魔恶魔，寄居在死去的修女身上。通常与恶魔的猫和贪食者一起出现。他非常容易激动、变态和不可预测。这个名字来源于恶魔教给主人的轻薄衣服。","Code":null},
+{"id":"2","Nazwa":"贪婪的恶魔","Pozycja":" 罪","Wpływ":"3","Kontrola":"3","Zagrozenie":"4","Opis":null,"Code":null},
+{"id":"3","Nazwa":"自私的恶魔","Pozycja":"罪","Wpływ":"0","Kontrola":"6","Zagrozenie":"2","Opis":null,"Code":null},
+{"id":"4","Nazwa":"暴食恶魔","Pozycja":"罪","Wpływ":"2","Kontrola":"6","Zagrozenie":"5","Opis":"贪食恶魔是典型的 3m 肌肉类人生物，有着巨大的下颚。通常与魅魔和猫一起被视为恶魔。吃多少肉之后，他都可以用它来改造自己的身体。","Code":null},
+{"id":"5","Nazwa":"信仰恶魔","Pozycja":"罪","Wpływ":"0","Kontrola":"6","Zagrozenie":"4","Opis":"恶魔的信仰使附庸有绝对言论的可能性，这使得他所说的一切都成为现实。条件一：此人必须看到并听到恶魔说出这些话。","Code":null},
+{"id":"6","Nazwa":"杀死恶魔","Pozycja":"罪","Wpływ":"0","Kontrola":"6","Zagrozenie":"4","Opis":"恶魔的杀戮使用者杀死任何与他的左手接触的东西，从手指到肘部。","Code":null},
+{"id":"7","Nazwa":"傀儡妖","Pozycja":"罪","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"8","Nazwa":"雷恶魔","Pozycja":"恶魔","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"9","Nazwa":"肉妖","Pozycja":"恶魔","Wpływ":"1","Kontrola":"4","Zagrozenie":"3","Opis":"肉妖可以改变它接触到的任何人的身体结构。","Code":null},
+{"id":"10","Nazwa":"魂魔","Pozycja":"恶魔","Wpływ":"4","Kontrola":"5","Zagrozenie":"4","Opis":"它吸收了它杀死的人的灵魂。他用它们来增强自己","Code":null},
+{"id":"11","Nazwa":"折纸恶魔","Pozycja":"恶魔","Wpływ":"0","Kontrola":"5","Zagrozenie":"1","Opis":"折纸恶魔召唤纸折纸。这使他能够在战斗中使用它们。通过保持纸张在视线范围内，宠物可以达到巨大的尺寸。","Code":null},
+{"id":"12","Nazwa":"蜘蛛恶魔","Pozycja":"恶魔","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"13","Nazwa":"火妖","Pozycja":"恶魔","Wpływ":"0","Kontrola":"0","Zagrozenie":"3","Opis":"火魔是一个着火的类人生物。控制你周围的火。","Code":null},
+{"id":"14","Nazwa":"魔剑","Pozycja":"恶魔","Wpływ":"2","Kontrola":"3","Zagrozenie":"3","Opis":null,"Code":null},
+{"id":"15","Nazwa":"水妖","Pozycja":"恶魔","Wpływ":"0","Kontrola":null,"Zagrozenie":"2","Opis":"水魔是一种 6 手人形鲨鱼。它有能力把你的手变成钢鱼叉","Code":null},
+{"id":"16","Nazwa":"狼魔","Pozycja":"恶魔","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"17","Nazwa":"血魔","Pozycja":"恶魔","Wpływ":"1","Kontrola":"3","Zagrozenie":"4","Opis":"血魔是一具骷髅，没有腿，而是有血液的漩涡。并且取决于持有人的性别：M）从眼窝流出的血液。 K) 血毛","Code":null},
+{"id":"18","Nazwa":"梦之恶魔","Pozycja":"恶魔","Wpływ":"0","Kontrola":"6","Zagrozenie":"0","Opis":"梦魔允许你影响被选择的理性存在的梦想","Code":null},
+{"id":"19","Nazwa":"钢铁恶魔","Pozycja":"恶魔","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"20","Nazwa":"猫妖","Pozycja":"恶魔","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"21","Nazwa":"折磨恶魔","Pozycja":"恶魔","Wpływ":"4","Kontrola":"2","Zagrozenie":"4","Opis":"折磨恶魔，让你看到折磨给定生物的最有效方法。最重要的是，折磨更痛苦。\r\n","Code":null},
+{"id":"22","Nazwa":"莲花妖","Pozycja":"恶魔","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"23","Nazwa":"时间恶魔","Pozycja":"恶魔","Wpływ":"0","Kontrola":"1","Zagrozenie":"4","Opis":"用户可以穿越影响时间线连续性的时间。","Code":null},
+{"id":"24","Nazwa":"不朽的恶魔","Pozycja":"去做","Wpływ":"0","Kontrola":"6","Zagrozenie":"4","Opis":"不朽恶魔是一种人工创造的恶魔，可以让使用者立即再生并完全否定痛苦。","Code":null},
+{"id":"25","Nazwa":"科技恶魔","Pozycja":"去做","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
+{"id":"666","Nazwa":"帝魔","Pozycja":"魔鬼","Wpływ":"0","Kontrola":"0","Zagrozenie":"5","Opis":"存在的第一个恶魔，地狱之王。这是在挪威的希尔克内斯市第一次也是唯一一次观察到。一切被认为是生命的东西在它出现的地方一公里内立即死亡。\r\n\r\n附言。他喜欢花生酱煎饼。","Code":"4829"},
+{"id":"999","Nazwa":"妖后","Pozycja":"魔鬼","Wpływ":"0","Kontrola":"0","Zagrozenie":"5","Opis":"","Code":"8207"}
+]
+}
+]

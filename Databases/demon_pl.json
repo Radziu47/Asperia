@@ -1,7 +1,7 @@
 [
 {"type":"header","version":"5.0.4","comment":"Export to JSON plugin for PHPMyAdmin"},
 {"type":"database","name":"asperia"},
-{"type":"table","name":"demony","database":"asperia","data":
+{"type":"table","name":"demony_pl","database":"asperia","data":
 [
 {"id":"1","Nazwa":"Succubus demom","Pozycja":"Sin","Wpływ":"6","Kontrola":"1","Zagrozenie":"4","Opis":"Succubus demon, zamieszkuje ciało martwej zakonnicy. Zazwyczaj widywany w towarzystwie Cat i Gluttony demona. Jest strasznie pobudliwy, perwerysyjny i nieprzewidywalny. Nazwa wywodzi się z skąpego ubrania, które jest naurzucone przez demona.","Code":null},
 {"id":"2","Nazwa":"Greed demon","Pozycja":"Sin","Wpływ":"3","Kontrola":"3","Zagrozenie":"4","Opis":null,"Code":null},

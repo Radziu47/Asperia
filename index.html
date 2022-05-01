@@ -15,7 +15,7 @@
                 <div class="headerContent">
                     <div class="logo">logo place<wbr>holder</div>
                     <div class="searchBar">
-                        <form action="" method="get">
+                        <form class="searchForm" action="" method="get">
                             <input type="text" class="searchInput" placeholder="Search" oninput="checkInput(this)">
                             <button type="submit" class="searchButton" disabled>Search</button>
                         </form>
@@ -74,7 +74,37 @@
 
 </html>
 <script>
-    
+
+    let currentLang = "pl"
+
+    const searchForm = document.querySelector(".searchForm")
+
+    searchForm.addEventListener("submit", e => {
+        e.preventDefault()
+        database($(".searchInput").val())
+    })
+
+    async function database(name) {
+        const response = await fetch(`./Databases/demon_${currentLang}.json`)
+
+        let data = await response.json()
+
+        let dataSearch = await data[2].data
+
+        let nameFound = await dataSearch.forEach((element, key) => {
+            if (name.includes(element.Code)) {
+                if (dataSearch[key].Code.indexOf(name) > -1) {
+                    console.log(dataSearch[key].Nazwa)
+                }
+            }else if (element.Code == null) {
+                if (dataSearch[key].Nazwa.toLowerCase().indexOf(name.toLowerCase()) > -1) {
+                    console.log(dataSearch[key].Nazwa)
+                }
+            }
+        })
+        }
+
+
     function checkInput(thisElement) {
     if(thisElement.value !== null && thisElement.value !== ""){
         $(".searchButton").prop("disabled", false);
@@ -97,12 +127,16 @@
 
 function changeLang(thisElement) {
     if (thisElement.value == "Polish") {
+        currentLang = "pl"
         $("#langImg").attr("src", "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1200px-Flag_of_Poland.svg.png")
     }else if (thisElement.value == "English") {
+        currentLang = "eng"
         $("#langImg").attr("src", "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png")
     }else if (thisElement.value == "Mandarin") {
+        currentLang = "zh"
         $("#langImg").attr("src", "https://cdn.britannica.com/90/7490-004-BAD4AA72/Flag-China.jpg")
     }else if (thisElement.value == "Spanish") {
+        currentLang = "sp"
         $("#langImg").attr("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/2560px-Flag_of_Spain.svg.png")        
     }
 }
