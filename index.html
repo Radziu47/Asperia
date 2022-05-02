@@ -38,29 +38,31 @@
                 <div class="smallNav"></div>
             </header>
             <div class="navBar rounded">
-                <h3>Heading</h3>
+                <h3>D.C.O info</h3>
                 <ul>
-                    <li><a href="#">test1</a></li>
-                    <li><a href="#">test1</a></li>
-                    <li><a href="#">test1</a></li>
+                    <li><a href="./Headings/">Workers info</a></li>
+                    <li><a href="./Headings/">Site info</a></li>
+                    <li><a href="./Headings/">Weaponry info</a></li>
                 </ul>
-                <h3>Heading2</h3>
+                <h3>Deus ex Machina</h3>
                 <ul>
-                    <li><a href="#">test1</a></li>
-                    <li><a href="#">test1</a></li>
-                    <li><a href="#">test1</a></li>
+                    <li><a href="./Headings/">test1</a></li>
+                    <li><a href="./Headings/">test1</a></li>
+                    <li><a href="./Headings/">test1</a></li>
                 </ul>
-                <h3>Heading3</h3>
+                <h3>Pre-prologue Lore</h3>
                 <ul>
-                    <li><a href="#">test1</a></li>
-                    <li><a href="#">test1</a></li>
-                    <li><a href="#">test1</a></li>
+                    <li><a href="./Headings/">Ayesha</a></li>
+                    <li><a href="./Headings/">"The History of Eden and It's End"</a></li>
+                    <li><a href="./Headings/">History of Seol and It's Triumpth</a></li>
                 </ul>
-                <h3>Heading4</h3>
+                <h3>Instructions</h3>
                 <ul>
-                    <li><a href="#">test1eeeeeeeeee</a></li>
-                    <li><a href="#">test1</a></li>
-                    <li><a href="#">test1</a></li>
+                    <li><a href="./Headings/">D.C.O</a></li>
+                    <li><a href="./Headings/">Ayesha stuff</a></li>
+                    <li><a href="./Headings/">Demon stuff</a></li>
+                    <li><a href="./Headings/">Pantheon of Light</a></li>
+                    <li><a href="./Headings/">Pantheon of Meat</a></li>
                 </ul>
             </div>
             <div class="main rounded"></div>
@@ -82,15 +84,18 @@
     const searchForm = document.querySelector(".searchForm")
     const searchInput = document.querySelector(".searchInput")
     const searchTip = document.querySelector(".searchTip")
+    const main = document.querySelector(".main")
 
-    // searchForm.addEventListener("submit", e => {
-    //     e.preventDefault()
-    //     database($(".searchInput").val())
-    // })
+    searchForm.addEventListener("submit", handleSubmit)
+
+    function handleSubmit(e) {
+        e.preventDefault()
+        searchDatabase(searchInput.value, true)
+    }
 
     searchInput.addEventListener("input", e => {
         if (e.target.value.length >= 1 && e.target.value != "null") {
-            database(e.target.value)
+            searchDatabase(e.target.value, false)
         }else{
             searchTip.textContent = ""
         }
@@ -109,45 +114,69 @@
         }
     })
 
-    async function database(name) {
-
-        searchTip.textContent = ""
-
+    async function searchDatabase(name, info) {        
         const response = await fetch(`./Databases/demon_${currentLang}.json`)
-
         const data = await response.json()
-
         const dataSearch = await data[2].data
 
-        const nameFound = await dataSearch.forEach((element, key) => {
-            if (name.includes(element.Code)) {
-                if (dataSearch[key].Code.includes(name)) {
-                    const element = document.createElement("p")
-                    element.textContent = dataSearch[key].Nazwa
-                    element.classList.add("searchResults")
-                    searchTip.append(element)
-                    element.addEventListener("click", e => {
-                        searchInput.value = element.textContent
-                        database(searchInput.value)
-                    })
+        if (info) {
+            main.textContent = ""
+            const infoFound = await dataSearch.forEach((element, key) => {
+                if (name.includes(element.Code)) {
+                    if (dataSearch[key].Code.includes(name)) {
+                        showData(element)
+                    }
+                }else if (element.Code == null) {
+                    if (dataSearch[key].Nazwa.toLowerCase().includes(name.toLowerCase())) {
+                        showData(element)
+                    }
                 }
-            }else if (element.Code == null) {
-                if (dataSearch[key].Nazwa.toLowerCase().includes(name.toLowerCase())) {
-                    const element = document.createElement("p")
-                    element.textContent = dataSearch[key].Nazwa
-                    element.classList.add("searchResults")
-                    searchTip.append(element)
-                    element.addEventListener("click", e => {
-                        searchInput.value = element.textContent
-                        database(searchInput.value)
-                    })
+            })
+        }else{
+            searchTip.textContent = ""
+    
+            const nameFound = await dataSearch.forEach((element, key) => {
+                if (name.includes(element.Code)) {
+                    if (dataSearch[key].Code.includes(name)) {
+                        showTips(element)
+                    }
+                }else if (element.Code == null) {
+                    if (dataSearch[key].Nazwa.toLowerCase().includes(name.toLowerCase())) {
+                        showTips(element)
+                    }
                 }
-            }
-        })
+            })
         }
+    }
 
+function showData(element) {
+    const Nazwa = document.createElement("p")
+    const Pozycja = document.createElement("p")
+    const Opis = document.createElement("p")
+    const Zagrozenie = document.createElement("p")
+    const Kontrola = document.createElement("p")
+    const Wpływ = document.createElement("p")
+    Nazwa.textContent = `Name: ${element.Nazwa}`
+    Pozycja.textContent = `Hierarchy: ${element.Pozycja}`
+    Zagrozenie.textContent = `Danger level: ${element.Zagrozenie}`
+    Kontrola.textContent = `Control level: ${element.Kontrola}`
+    Wpływ.textContent = `Influence level: ${element.Wpływ}`
+    Opis.textContent = `Description: ${element.Opis}`
+    main.append(Nazwa, Pozycja, Zagrozenie, Kontrola, Wpływ, Opis)
+}
 
-    function checkInput(thisElement) {
+function showTips(element) {
+    const result = document.createElement("p")
+    result.textContent = element.Nazwa
+    result.classList.add("searchResults")
+    searchTip.append(result)
+    result.addEventListener("click", e => {
+        searchInput.value = result.textContent
+        searchDatabase(searchInput.value, false)
+    })
+}
+
+function checkInput(thisElement) {
     if(thisElement.value !== null && thisElement.value !== ""){
         $(".searchButton").prop("disabled", false);
     }else{

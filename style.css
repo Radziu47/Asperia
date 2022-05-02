@@ -137,6 +137,9 @@ body{
     display: flex;
     flex-direction: column;
 }
+.navBar > h3{
+    text-transform: uppercase;
+}
 
 .navBar > *{
     color: var(--secondaryFontColor);
