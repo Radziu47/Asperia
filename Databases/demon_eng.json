@@ -3,7 +3,7 @@
 {"type":"database","name":"asperia"},
 {"type":"table","name":"demony_eng","database":"asperia","data":
 [
-{"id":"1","Nazwa":"Succubus demom","Pozycja":"Sin","Wpływ":"6","Kontrola":"1","Zagrozenie":"4","Opis":"Succubus demon, is living inside a body of dead nun. Usually seen with Cat and Gluttony demon. It is very  active, perverted and \r\nunpredictable. The name origin coms from a very skimpy clothes, which is imposed by the demon.","Code":null},
+{"id":"1","Nazwa":"Succubus demon","Pozycja":"Sin","Wpływ":"6","Kontrola":"1","Zagrozenie":"4","Opis":"Succubus demon, is living inside a body of dead nun. Usually seen with Cat and Gluttony demon. It is very  active, perverted and \r\nunpredictable. The name origin coms from a very skimpy clothes, which is imposed by the demon.","Code":null},
 {"id":"2","Nazwa":"Greed demon","Pozycja":"Sin","Wpływ":"3","Kontrola":"3","Zagrozenie":"4","Opis":null,"Code":null},
 {"id":"3","Nazwa":"Conceit demon","Pozycja":"Sin","Wpływ":"6","Kontrola":"6","Zagrozenie":"2","Opis":null,"Code":null},
 {"id":"4","Nazwa":"Gluttony demon","Pozycja":"Sin","Wpływ":"2","Kontrola":"6","Zagrozenie":"5","Opis":"Gluttony demon is usually 3m high, muscular humanoid creature, with big jaw. Usually is seen with Succubus and Cat demon. After eating any amount of meat, he can use it to modify his body.","Code":null},
@@ -29,7 +29,7 @@
 {"id":"24","Nazwa":"Imortal demon","Pozycja":"Made","Wpływ":"0","Kontrola":"6","Zagrozenie":"4","Opis":"Immortal demon is a demon created artificially to give the user immediate regeneration and complete negation of pain.","Code":null},
 {"id":"25","Nazwa":"Technology demon","Pozycja":"Made","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
 {"id":"666","Nazwa":"Emperor demon","Pozycja":"Devil","Wpływ":"6","Kontrola":"0","Zagrozenie":"5","Opis":"The first demon in existence, the King of Hell. For observed for the first and only time in Norway, in the city of Kirkenes. Everything that is considered life died instantly within 1km of the place of its appearance.\r\n\r\nPs. He likes peanut butter pancakes.","Code":"4829"},
-{"id":"999","Nazwa":"Empress demon","Pozycja":"Devil","Wpływ":"6","Kontrola":"0","Zagrozenie":"5","Opis":null,"Code":"8207"}
+{"id":"999","Nazwa":"Empress demon","Pozycja":"Human","Wpływ":"6","Kontrola":"0","Zagrozenie":"5","Opis":null,"Code":"8207"}
 ]
 }
 ]

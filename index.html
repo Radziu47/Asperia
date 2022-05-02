@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D.C.O Informations</title>
+    <title>D.C.O Documentary</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
@@ -18,6 +18,7 @@
                         <form class="searchForm" action="" method="get">
                             <input type="text" class="searchInput" placeholder="Search" oninput="checkInput(this)">
                             <button type="submit" class="searchButton" disabled>Search</button>
+                            <div class="searchTip"></div>
                         </form>
                     </div>
                     <div class="langContainer">
@@ -78,27 +79,64 @@
     let currentLang = "pl"
 
     const searchForm = document.querySelector(".searchForm")
+    const searchInput = document.querySelector(".searchInput")
+    const searchTip = document.querySelector(".searchTip")
 
-    searchForm.addEventListener("submit", e => {
-        e.preventDefault()
-        database($(".searchInput").val())
+    // searchForm.addEventListener("submit", e => {
+    //     e.preventDefault()
+    //     database($(".searchInput").val())
+    // })
+
+    searchInput.addEventListener("input", e => {
+        if (searchInput.value.length >= 1) {
+            database(searchInput.value)
+        }else{
+            searchTip.textContent = ""
+            searchTip.classList.remove("show")
+        }
+    })
+
+    searchInput.addEventListener("focus", e => {
+        searchTip.classList.add("show")
+    })
+    searchInput.addEventListener("blur", e => {
+        searchTip.classList.remove("show")
     })
 
     async function database(name) {
+
+        searchTip.textContent = ""
+
+        searchTip.classList.add("show")
+   
         const response = await fetch(`./Databases/demon_${currentLang}.json`)
 
-        let data = await response.json()
+        const data = await response.json()
 
-        let dataSearch = await data[2].data
+        const dataSearch = await data[2].data
 
-        let nameFound = await dataSearch.forEach((element, key) => {
+        const nameFound = await dataSearch.forEach((element, key) => {
             if (name.includes(element.Code)) {
                 if (dataSearch[key].Code.indexOf(name) > -1) {
-                    console.log(dataSearch[key].Nazwa)
+                    const element = document.createElement("p")
+                    element.textContent = dataSearch[key].Nazwa
+                    element.classList.add("searchResults")
+                    searchTip.append(element)
+                    element.addEventListener("click", e => {
+                        searchInput.value = element.textContent
+                        database(searchInput.value)
+                    })
                 }
             }else if (element.Code == null) {
                 if (dataSearch[key].Nazwa.toLowerCase().indexOf(name.toLowerCase()) > -1) {
-                    console.log(dataSearch[key].Nazwa)
+                    const element = document.createElement("p")
+                    element.textContent = dataSearch[key].Nazwa
+                    element.classList.add("searchResults")
+                    searchTip.append(element)
+                    element.addEventListener("click", e => {
+                        searchInput.value = element.textContent
+                        database(searchInput.value)
+                    })
                 }
             }
         })

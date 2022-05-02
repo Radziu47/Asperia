@@ -3,7 +3,7 @@
 {"type":"database","name":"asperia"},
 {"type":"table","name":"demony_pl","database":"asperia","data":
 [
-{"id":"1","Nazwa":"Succubus demom","Pozycja":"Sin","Wpływ":"6","Kontrola":"1","Zagrozenie":"4","Opis":"Succubus demon, zamieszkuje ciało martwej zakonnicy. Zazwyczaj widywany w towarzystwie Cat i Gluttony demona. Jest strasznie pobudliwy, perwerysyjny i nieprzewidywalny. Nazwa wywodzi się z skąpego ubrania, które jest naurzucone przez demona.","Code":null},
+{"id":"1","Nazwa":"Succubus demon","Pozycja":"Sin","Wpływ":"6","Kontrola":"1","Zagrozenie":"4","Opis":"Succubus demon, zamieszkuje ciało martwej zakonnicy. Zazwyczaj widywany w towarzystwie Cat i Gluttony demona. Jest strasznie pobudliwy, perwerysyjny i nieprzewidywalny. Nazwa wywodzi się z skąpego ubrania, które jest naurzucone przez demona.","Code":null},
 {"id":"2","Nazwa":"Greed demon","Pozycja":"Sin","Wpływ":"3","Kontrola":"3","Zagrozenie":"4","Opis":null,"Code":null},
 {"id":"3","Nazwa":"Conceit demon","Pozycja":"Sin","Wpływ":"6","Kontrola":"6","Zagrozenie":"2","Opis":null,"Code":null},
 {"id":"4","Nazwa":"Gluttony demon","Pozycja":"Sin","Wpływ":"2","Kontrola":"6","Zagrozenie":"5","Opis":"Gluttony demon to zazwyczaj 3m umięśnione humanoidalne stworzenie, z wielkimi szczękami. Zazwyczaj widywany z Succubus i Cat demonem. Po zjedzeniu dowolnej ilości mięsa, może go użyć do zmodyfikowania swojego ciała.","Code":null},
@@ -29,7 +29,7 @@
 {"id":"24","Nazwa":"Imortal demon","Pozycja":"Made","Wpływ":"0","Kontrola":"6","Zagrozenie":"4","Opis":"Immortal demon to demon stworzony sztucznie, by dać użytkownikowi natychmiastową regeneracje, i całkowitą negacje bólu.","Code":null},
 {"id":"25","Nazwa":"Technology demon","Pozycja":"Made","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
 {"id":"666","Nazwa":"Emperor demon","Pozycja":"Devil","Wpływ":"6","Kontrola":"0","Zagrozenie":"5","Opis":"Pierwszy istniejący demon, król Piekła.  Za obserwowany pierwszy i jedyny raz w Norwegii, w mieście Kirkenes. Wszystko co uznawane za życie umarło, natychmiastowo w obrębie 1km, od miejsca pojawienia się.\r\n\r\nPs. Lubi placki z masłem orzechowym.","Code":"4829"},
-{"id":"999","Nazwa":"Empress demon","Pozycja":"Devil","Wpływ":"6","Kontrola":"0","Zagrozenie":"5","Opis":null,"Code":"8207"}
+{"id":"999","Nazwa":"Empress demon","Pozycja":"Human","Wpływ":"6","Kontrola":"0","Zagrozenie":"5","Opis":null,"Code":"8207"}
 ]
 }
 ]

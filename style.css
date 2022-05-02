@@ -66,13 +66,38 @@ body{
     background-color: var(--secondaryLightColor);
 }
 
-/* .langContainer img{
-    margin-left: 20px;
+.searchInput{
     width: 200px;
-    height: 50px;
-    vertical-align: middle;
-    border-radius: 50%
-} */
+}
+
+.searchTip{
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: min-content;
+    max-height: 30vh;
+    width: 200px;
+    border: 1px solid black;
+    border-top-style: none;
+    background-color: var(--secondarySupportiveColor);
+    color: black;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+}
+
+.searchTip.show{
+    display: flex;
+}
+
+.searchTip > *{
+    margin: 0;
+    padding: 10px;
+}
+
+.searchTip > *:hover{
+    cursor: pointer;
+    background-color: white;
+}
 
 .langContainer img{
     width: 100%;

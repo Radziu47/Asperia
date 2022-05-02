@@ -29,7 +29,7 @@
 {"id":"24","Nazwa":"不朽的恶魔","Pozycja":"去做","Wpływ":"0","Kontrola":"6","Zagrozenie":"4","Opis":"不朽恶魔是一种人工创造的恶魔，可以让使用者立即再生并完全否定痛苦。","Code":null},
 {"id":"25","Nazwa":"科技恶魔","Pozycja":"去做","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
 {"id":"666","Nazwa":"帝魔","Pozycja":"魔鬼","Wpływ":"0","Kontrola":"0","Zagrozenie":"5","Opis":"存在的第一个恶魔，地狱之王。这是在挪威的希尔克内斯市第一次也是唯一一次观察到。一切被认为是生命的东西在它出现的地方一公里内立即死亡。\r\n\r\n附言。他喜欢花生酱煎饼。","Code":"4829"},
-{"id":"999","Nazwa":"妖后","Pozycja":"魔鬼","Wpływ":"0","Kontrola":"0","Zagrozenie":"5","Opis":"","Code":"8207"}
+{"id":"999","Nazwa":"妖后","Pozycja":"人类","Wpływ":"0","Kontrola":"0","Zagrozenie":"5","Opis":"","Code":"8207"}
 ]
 }
 ]

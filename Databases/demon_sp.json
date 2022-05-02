@@ -3,7 +3,7 @@
 {"type":"database","name":"asperia"},
 {"type":"table","name":"demony_sp","database":"asperia","data":
 [
-{"id":"1","Nazwa":"Succubus demom","Pozycja":"Sin","Wpływ":"6","Kontrola":"1","Zagrozenie":"4","Opis":"Demonio súcubo, habitando el cuerpo de una monja muerta. Por lo general, se ve con el gato y los glotones del demonio. Es terriblemente excitable, perverso e impredecible. El nombre deriva de la ropa escasa que un demonio le enseña al anfitrión.","Code":null},
+{"id":"1","Nazwa":"Succubus demon","Pozycja":"Sin","Wpływ":"6","Kontrola":"1","Zagrozenie":"4","Opis":"Demonio súcubo, habitando el cuerpo de una monja muerta. Por lo general, se ve con el gato y los glotones del demonio. Es terriblemente excitable, perverso e impredecible. El nombre deriva de la ropa escasa que un demonio le enseña al anfitrión.","Code":null},
 {"id":"2","Nazwa":"Greed demon","Pozycja":"Sin","Wpływ":"3","Kontrola":"3","Zagrozenie":"4","Opis":null,"Code":null},
 {"id":"3","Nazwa":"Conceit demon","Pozycja":"Sin","Wpływ":"6","Kontrola":"6","Zagrozenie":"2","Opis":null,"Code":null},
 {"id":"4","Nazwa":"Gluttony demon","Pozycja":"Sin","Wpływ":"2","Kontrola":"6","Zagrozenie":"5","Opis":"El demonio de la glotonería es típicamente una criatura humanoide musculosa de 3 m con una enorme mandíbula. Usualmente visto con Succubus y Cat como un demonio. Después de comer cualquier cantidad de carne, puede usarla para modificar su cuerpo.","Code":null},
@@ -29,7 +29,7 @@
 {"id":"24","Nazwa":"Imortal demon","Pozycja":"Made","Wpływ":"0","Kontrola":"6","Zagrozenie":"4","Opis":"El demonio inmortal es un demonio creado artificialmente para brindarle al usuario una regeneración inmediata y una negación completa del dolor.","Code":null},
 {"id":"25","Nazwa":"Technology demon","Pozycja":"Made","Wpływ":null,"Kontrola":null,"Zagrozenie":null,"Opis":null,"Code":null},
 {"id":"666","Nazwa":"Emperor demon","Pozycja":"Devil","Wpływ":"6","Kontrola":"0","Zagrozenie":"5","Opis":"El primer demonio en existencia, el Rey del Infierno. Pues observado por primera y única vez en Noruega, en la ciudad de Kirkenes. Todo lo que se considera vida murió instantáneamente a menos de 1 km del lugar de su aparición.\r\n\r\nPD. Le gustan los panqueques de mantequilla de maní.","Code":"4829"},
-{"id":"999","Nazwa":"Empress demon","Pozycja":"Devil","Wpływ":"6","Kontrola":"0","Zagrozenie":"5","Opis":null,"Code":"8207"}
+{"id":"999","Nazwa":"Empress demon","Pozycja":"Human","Wpływ":"6","Kontrola":"0","Zagrozenie":"5","Opis":null,"Code":"8207"}
 ]
 }
 ]
