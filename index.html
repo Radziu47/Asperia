@@ -77,6 +77,7 @@
 <script>
 
     let currentLang = "pl"
+    let currentElement
 
     const searchForm = document.querySelector(".searchForm")
     const searchInput = document.querySelector(".searchInput")
@@ -88,27 +89,30 @@
     // })
 
     searchInput.addEventListener("input", e => {
-        if (searchInput.value.length >= 1) {
-            database(searchInput.value)
+        if (e.target.value.length >= 1 && e.target.value != "null") {
+            database(e.target.value)
         }else{
             searchTip.textContent = ""
-            searchTip.classList.remove("show")
         }
+    })
+
+    document.addEventListener("mousedown", e => {
+        currentElement = e.target.classList.value
     })
 
     searchInput.addEventListener("focus", e => {
         searchTip.classList.add("show")
     })
     searchInput.addEventListener("blur", e => {
-        searchTip.classList.remove("show")
+        if (!currentElement.includes("searchResults")) {
+            searchTip.classList.remove("show")
+        }
     })
 
     async function database(name) {
 
         searchTip.textContent = ""
 
-        searchTip.classList.add("show")
-   
         const response = await fetch(`./Databases/demon_${currentLang}.json`)
 
         const data = await response.json()
@@ -117,7 +121,7 @@
 
         const nameFound = await dataSearch.forEach((element, key) => {
             if (name.includes(element.Code)) {
-                if (dataSearch[key].Code.indexOf(name) > -1) {
+                if (dataSearch[key].Code.includes(name)) {
                     const element = document.createElement("p")
                     element.textContent = dataSearch[key].Nazwa
                     element.classList.add("searchResults")
@@ -128,7 +132,7 @@
                     })
                 }
             }else if (element.Code == null) {
-                if (dataSearch[key].Nazwa.toLowerCase().indexOf(name.toLowerCase()) > -1) {
+                if (dataSearch[key].Nazwa.toLowerCase().includes(name.toLowerCase())) {
                     const element = document.createElement("p")
                     element.textContent = dataSearch[key].Nazwa
                     element.classList.add("searchResults")

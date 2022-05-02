@@ -1,9 +1,13 @@
 :root{
-    --mainColor: rgb(41, 36, 36);
-    --secondaryColor: rgb(255, 174, 0);
-    --secondaryLightColor: rgb(255, 208, 106);
-    --mainSupportiveColor: rgb(0, 0, 0);
-    --secondarySupportiveColor: rgb(235, 235, 235);
+    --mainColor: #1F1926;
+    --secondaryColor: #16121b;
+    --supportiveColor: #BBA1D4;
+    --mainGradient: linear-gradient(to right bottom, #645176, #624b7a, #60447f, #5e3d83, #5b3687, #552f82, #4f277d, #492078, #3f176a, #350f5c, #2b064e, #210041);
+    --secondaryGradient: linear-gradient(to left top, #8f77a4, #8569a0, #7b5b9b, #714d97, #663f92, #5a3586, #4e2c7b, #42236f, #331c59, #251644, #190f30, #0f001d);
+    --mainDark: #382A46;
+    --mainLight: rgb(241, 239, 232);
+    --secondaryFontColor: #210041;
+    --mainCubicBezier: cubic-bezier(.17,.93,.53,.99);
 }
 
 *, *::before, *::after{
@@ -14,7 +18,6 @@ body{
     margin: 0;
     padding: 0;
     color: white;
-    /* background-color: var(--secondarySupportiveColor); */
 }
 
 .rounded{
@@ -57,17 +60,21 @@ body{
     width: 80px
 }
 
-.searchBar > .searchButton{
+.searchBar .searchButton{
     outline: none;
-    border: 1px solid var(--secondarySupportiveColor);
-    background-color: var(--secondaryColor);
+    border: 3px solid var(--secondaryFontColor);
+    background-color: var(--supportiveColor);
+    transition: transform, color, background-color 300ms var(--mainCubicBezier);
 }
-.searchBar > .searchButton:active{
-    background-color: var(--secondaryLightColor);
+.searchBar .searchButton:active{
+    color: var(--supportiveColor);
+    background-color: var(--secondaryColor);
+    transform: scale(.9);
 }
 
 .searchInput{
     width: 200px;
+    background-color: var(--mainLight);
 }
 
 .searchTip{
@@ -78,7 +85,7 @@ body{
     width: 200px;
     border: 1px solid black;
     border-top-style: none;
-    background-color: var(--secondarySupportiveColor);
+    background-color: var(--mainLight);
     color: black;
     position: absolute;
     display: none;
@@ -115,7 +122,7 @@ body{
 }
 
 .smallNav{
-    background-color: var(--mainSupportiveColor);
+    background-color: var(--mainDark);
     height: 3vh;
     width: 100%;
 }
@@ -125,13 +132,14 @@ body{
     overflow-x: hidden;
     min-width: 150px;
     margin-top: 3vh;
-    background-color: var(--secondaryColor);
+    background-color: var(--supportiveColor);
     grid-area: navbar;
     display: flex;
     flex-direction: column;
 }
 
 .navBar > *{
+    color: var(--secondaryFontColor);
     align-self: flex-start;
     margin-left: 10px;
 }
@@ -140,8 +148,16 @@ body{
     text-decoration-color: rgba(255, 255, 255, 0);
     text-underline-offset: 2px;
     color: white;
-    transition: 300ms ease-in-out;
-    transition-property: text-decoration-color;
+    background-image: var(--secondaryGradient);
+    background-size: 100%;
+    background-repeat: repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    transition: text-decoration-color 300ms var(--mainCubicBezier);
+    text-decoration-thickness: 3px;
 }
 
 .navBar > ul{
@@ -149,13 +165,18 @@ body{
 }
 
 .navBar a:hover{
-    text-decoration-color: rgba(255, 255, 255, 1);
+    text-decoration-color: var(--secondaryFontColor);
 }
 
 .main{
+    border: 7px solid transparent;
+    background-color: var(--secondaryColor);
     margin-top: 3vh;
     grid-area: main;
-    background-color: var(--secondarySupportiveColor);
+    background-image: linear-gradient(var(--secondaryColor), var(--secondaryColor)), 
+    var(--mainGradient);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
 
 .footer{
@@ -164,9 +185,14 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--mainSupportiveColor);
+    background-color: var(--mainColor);
 }
 
 .footer a, .footer a:link, .footer.visited{
-    color: var(--secondaryLightColor);
+    color: var(--mainLight);
+    transition: color 300ms var(--mainCubicBezier);
+}
+
+.footer a:hover{
+    color: var(--supportiveColor);
 }
