@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="eи">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.C.O Documentary</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="containerMain">
+            <header class="header">
+                <div class="headerContent">
+                    <div class="logo">logo place<wbr>holder</div>
+                    <div class="searchBar"></div>
+                    <div class="langContainer">
+                        <div class="langImgContainer">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1200px-Flag_of_Poland.svg.png" alt="" id="langImg">
+                        </div>
+                        <label for="lang">Language
+                            <select name="lang" id="lang" onchange="changeLang(this)">
+                                <option value="Polish">Polish</option>
+                                <option value="English">English</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="smallNav"></div>
+            </header>
+            <div class="main rounded"></div>
+            <footer class="footer">
+                <a href="https://github.com/Radziu47/Asperia">My project on GitHub</a>
+                <a href="https://github.com/NukieGIT">My friend's GitHub</a>
+                <a href="https://nukiegit.github.io/rock-paper-scissors/">RPS</a>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+
+let currentLang = "pl"
+const main = document.querySelector(".main")
+
+window.onload = getData()
+
+function changeLang(thisElement) {
+    if (thisElement.value == "Polish") {
+        currentLang = "pl"
+        $("#langImg").attr("src", "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1200px-Flag_of_Poland.svg.png")
+    }else if (thisElement.value == "English") {
+        currentLang = "eng"
+        $("#langImg").attr("src", "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png")
+    }
+    getData()
+}
+
+async function getData() {
+    main.textContent = ""
+    fetch("../../Databases/headings/DCO_info/dco_lore.json").then(response => response.json()).then(data => {
+        const Desc = document.createElement("p")
+        data[2].data.forEach((element, key) => {
+            if (currentLang == element.Lang) {
+                Desc.textContent = element.Opis
+            }else{ return }
+        })
+        main.append(Desc)
+    })    
+}
+
+
+</script>

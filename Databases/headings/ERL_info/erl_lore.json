@@ -1,0 +1,10 @@
+[
+{"type":"header","version":"5.0.4","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"asperia"},
+{"type":"table","name":"erl_lore","database":"asperia","data":
+[
+{"id":"1","Lang":"pl","Opis":"W.I.P"},
+{"id":"2","Lang":"eng","Opis":"W.I.P"}
+]
+}
+]

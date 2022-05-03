@@ -1,0 +1,63 @@
+[
+{"type":"header","version":"5.0.4","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"asp_dco_info"},
+{"type":"table","name":"dco_baza","database":"asp_dco_info","data":
+[
+{"id":"1","Nazwa":"nr. 1"},
+{"id":"2","Nazwa":"nr. 46"},
+{"id":"3","Nazwa":"nr. 90"},
+{"id":"4","Nazwa":" nr. 42"},
+{"id":"5","Nazwa":"nr.0"},
+{"id":"6","Nazwa":"nr.54"},
+{"id":"7","Nazwa":"nr. 67"},
+{"id":"8","Nazwa":"nr.32"},
+{"id":"9","Nazwa":"nr.98"},
+{"id":"10","Nazwa":"nr. 78"},
+{"id":"11","Nazwa":"nr.19"},
+{"id":"12","Nazwa":"nr.14"},
+{"id":"13","Nazwa":"nr.64"},
+{"id":"14","Nazwa":"nr.34"},
+{"id":"15","Nazwa":"nr.23"},
+{"id":"16","Nazwa":"nr.89"},
+{"id":"17","Nazwa":"nr.666"},
+{"id":"18","Nazwa":"nr.50"},
+{"id":"19","Nazwa":"nr.71"},
+{"id":"20","Nazwa":"nr.70"},
+{"id":"21","Nazwa":"nr.47"},
+{"id":"22","Nazwa":"nr.28"},
+{"id":"23","Nazwa":"nr.65"},
+{"id":"24","Nazwa":"nr.49"}
+]
+}
+,{"type":"table","name":"dco_relecja","database":"asp_dco_info","data":
+[
+{"id":"1","nazwa":"Parasite-C"},
+{"id":"2","nazwa":"Parasite-D"},
+{"id":"3","nazwa":"Unity"},
+{"id":"4","nazwa":"Presurektion"}
+]
+}
+,{"type":"table","name":"dco_workplace","database":"asp_dco_info","data":
+[
+{"id":"1","Lang":"pl","Nazwa":"DCOF"},
+{"id":"1","Lang":"eng","Nazwa":"DCOF"},
+{"id":"2","Lang":"pl","Nazwa":"Dowódca"},
+{"id":"2","Lang":"eng","Nazwa":"Commander"},
+{"id":"3","Lang":"pl","Nazwa":"Generał"},
+{"id":"3","Lang":"pl","Nazwa":"General"},
+{"id":"4","Lang":"pl","Nazwa":"Porucznik"},
+{"id":"4","Lang":"eng","Nazwa":"lieutenant"},
+{"id":"5","Lang":"pl","Nazwa":"Szeregowy"},
+{"id":"5","Lang":"eng","Nazwa":"Private"},
+{"id":"6","Lang":"pl","Nazwa":"Oddział Pozyskiwania Informacji"},
+{"id":"6","Lang":"eng","Nazwa":" Information Acquisiti"},
+{"id":"7","Lang":"pl","Nazwa":"Oddział Specjalny"},
+{"id":"7","Lang":"eng","Nazwa":"Special Forces"}
+]
+}
+,{"type":"table","name":"workers_info","database":"asp_dco_info","data":
+[
+{"id":"1","imie":null,"nazwisko":null,"stanowisko":"6","baza":"8","demon":"Torture demon","relacja":"4","demon_pod":null}
+]
+}
+]
