@@ -116,7 +116,7 @@
     })
 
     async function searchDatabase(name, info) {        
-        const response = await fetch(`./Databases/demon_${currentLang}.json`)
+        const response = await fetch(`./Databases/demons/demon_${currentLang}.json`)
         const data = await response.json()
         const dataSearch = await data[2].data
 
