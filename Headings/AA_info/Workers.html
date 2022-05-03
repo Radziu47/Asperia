@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="eи">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.C.O Documentary</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="containerMain">
+            <header class="header">
+                <div class="headerContent">
+                    <div class="logo">logo place<wbr>holder</div>
+                    <div class="searchBar">
+                        <form class="searchForm" action="" method="get">
+                            <input type="text" class="searchInput" placeholder="Search Id" oninput="checkInput(this)">
+                            <div class="searchTip"></div>
+                        </form>
+                    </div>
+                    <div class="langContainer">
+                        <div class="langImgContainer">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1200px-Flag_of_Poland.svg.png" alt="" id="langImg">
+                        </div>
+                        <label for="lang">Language
+                            <select name="lang" id="lang" onchange="changeLang(this)">
+                                <option value="Polish">Polish</option>
+                                <option value="English">English</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="smallNav"></div>
+            </header>
+            <div class="main rounded"></div>
+            <footer class="footer">
+                <a href="https://github.com/Radziu47/Asperia">My project on GitHub</a>
+                <a href="https://github.com/NukieGIT">My friend's GitHub</a>
+                <a href="https://nukiegit.github.io/rock-paper-scissors/">RPS</a>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+
+let currentLang = "pl"
+const main = document.querySelector(".main")
+const searchInput = document.querySelector(".searchInput")
+
+
+function changeLang(thisElement) {
+    if (thisElement.value == "Polish") {
+        currentLang = "pl"
+        $("#langImg").attr("src", "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Flag_of_Poland.svg/1200px-Flag_of_Poland.svg.png")
+    }else if (thisElement.value == "English") {
+        currentLang = "eng"
+        $("#langImg").attr("src", "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png")
+    }
+}
+
+function checkInput(thisElement) {
+    if(thisElement.value !== null && thisElement.value !== ""){
+        $(".searchButton").prop("disabled", false);
+    }else{
+        $(".searchButton").prop("disabled", true);
+    }
+}
+
+searchInput.addEventListener("input", e => {
+    main.textContent = ""
+    if (e.target.value != "" && e.target.value != null && e.target.value != "null") {
+        getData(e.target.value)
+    }
+})
+
+async function getData(id) {
+
+
+    const response = await fetch(`../../Databases/headings/DCO_info/asp_dco_info.json`)
+    const data = await response.json()
+    const dataSearch = await data[5].data
+    const dataSearch2 = await data[4].data
+    const dataSearch3 = await data[2].data
+    const dataSearch4 = await data[3].data
+    
+    const idFound = await dataSearch.forEach((element, key) => {
+        if (dataSearch[key].id.includes(id)) {
+            const placeFound = dataSearch2.forEach((element2, key2) => {
+                if (dataSearch[key].stanowisko.includes(element2.id)) {
+                    if (element2.Lang == currentLang) {
+                        const imie = document.createElement("p")
+                        const nazwisko = document.createElement("p")
+                        const stanowisko = document.createElement("p")
+                        imie.textContent = element.imie
+                        nazwisko.textContent = element.nazwisko
+                        stanowisko.textContent = element2.Nazwa
+                        main.append(imie, nazwisko, stanowisko)
+                    }
+                }
+            })
+            const placeFound2 = dataSearch3.forEach((element3, key3) => {
+                if (dataSearch[key].baza.includes(element3.id)) {
+                    const baza = document.createElement("p")
+                    const demon = document.createElement("p")
+                    baza.textContent = element3.Nazwa
+                    demon.textContent = element.demon
+                    main.append(baza, demon)
+                }
+            })
+            const placeFound3 = dataSearch4.forEach((element4, key4) => {
+                if (dataSearch[key].relacja.includes(element4.id)) {
+                    const relacja = document.createElement("p")
+                    const demon_pod = document.createElement("p")
+                    relacja.textContent = element4.nazwa
+                    demon_pod.textContent = element.demon_pod
+                    main.append(relacja, demon_pod)
+                }
+            })
+        }
+    })
+}
+
+    
+</script>
