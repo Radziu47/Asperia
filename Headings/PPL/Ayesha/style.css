@@ -1,0 +1,119 @@
+:root{
+    --mainColor: #ffc100;
+    --secondaryColor: #ffffff;
+    --supportiveColor: #ae8422;
+    --mainGradient: #ffc100;
+    --secondaryGradient:#ffc100;
+    --mainDark: #ffd656;
+    --mainLight: #dcd6c5;
+    --secondaryFontColor: #00fff7;
+    --mainCubicBezier: cubic-bezier(.17,.93,.53,.99);
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    
+}
+
+p{
+    font-size: 20px;
+    font-family:Tangerine;
+    color: var(--supportiveColor) !important;
+}
+.rounded{
+    border-radius: 10px;
+}
+
+.containerMain{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas: 
+    "header header header header header"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
+    "main main main main main"
+    "footer footer footer footer footer";
+    grid-template-columns: .5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 1fr 1fr 2fr 1fr 10vh;
+}
+
+.header{
+    top: 0;
+    grid-area: header;
+    background-color: var(--mainColor);
+    position: sticky;
+}
+
+.headerContent{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+    background-color: red;
+    height: 80px;
+    width: 80px
+}
+
+.searchInput{
+    width: 200px;
+    background-color: var(--mainLight);
+}
+
+.langContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.langImgContainer{
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.smallNav{
+    background-color: var(--mainDark);
+    height: 3vh;
+    width: 100%;
+}
+
+.main{
+    border: 7px solid var(--mainGradient);
+    background-color: var(--secondaryColor);
+    margin-top: 3vh;
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--mainColor);
+}
+
+.footer a, .footer a:link, .footer.visited{
+    color: var(--mainLight);
+    transition: color 300ms var(--mainCubicBezier);
+}
+
+.footer a:hover{
+    color: var(--supportiveColor);
+}
