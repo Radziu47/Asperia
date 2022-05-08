@@ -34,7 +34,28 @@
                 </div>
                 <div class="smallNav"></div>
             </header>
-            <div class="main rounded"></div>
+            <div class="main rounded">
+                <template class="mainTemplate">
+                    <p>Name: <span class="nameTemplate"></span></p>
+                    <p>Surname: <span class="surnameTemplate"></span></p>
+                    <p>Workplace: <span class="workplaceTemplate"></span></p>
+                    <p>Site: <span class="siteTemplate"></span></p>
+                    <table>
+                        <tr>
+                            <td>Demon: <span class="demonTemplate"></span></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Demon Relation: <span class="demonRelationTemplate"></span></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Subdemon: <span class="subDemonTemplate"></span></td>
+                        </tr>
+                    </table>
+                </template>
+            </div>
             <footer class="footer">
                 <a href="https://github.com/Radziu47/Asperia">My project on GitHub</a>
                 <a href="https://github.com/NukieGIT">My friend's GitHub</a>
@@ -50,6 +71,7 @@
 let currentLang = "pl"
 const main = document.querySelector(".main")
 const searchInput = document.querySelector(".searchInput")
+const textTemplate = document.querySelector(".mainTemplate")
 
 
 function changeLang(thisElement) {
@@ -88,39 +110,38 @@ async function getData(id) {
     const dataSearch4 = await data[3].data
     
     const idFound = await dataSearch.forEach((element, key) => {
+        const cloneTextTemplate = textTemplate.content.cloneNode(true)
         if (dataSearch[key].id.includes(id)) {
             const placeFound = dataSearch2.forEach((element2, key2) => {
                 if (dataSearch[key].stanowisko.includes(element2.id)) {
                     if (element2.Lang == currentLang) {
-                        const imie = document.createElement("p")
-                        const nazwisko = document.createElement("p")
-                        const stanowisko = document.createElement("p")
+                        const imie = cloneTextTemplate.querySelector(".nameTemplate")
+                        const nazwisko = cloneTextTemplate.querySelector(".surnameTemplate")
+                        const stanowisko = cloneTextTemplate.querySelector(".workplaceTemplate")
                         imie.textContent = element.imie
                         nazwisko.textContent = element.nazwisko
                         stanowisko.textContent = element2.Nazwa
-                        main.append(imie, nazwisko, stanowisko)
                     }
                 }
             })
             const placeFound2 = dataSearch3.forEach((element3, key3) => {
                 if (dataSearch[key].baza.includes(element3.id)) {
-                    const baza = document.createElement("p")
-                    const demon = document.createElement("p")
+                    const baza = cloneTextTemplate.querySelector(".siteTemplate")
+                    const demon = cloneTextTemplate.querySelector(".demonTemplate")
                     baza.textContent = element3.Nazwa
                     demon.textContent = element.demon
-                    main.append(baza, demon)
                 }
             })
             const placeFound3 = dataSearch4.forEach((element4, key4) => {
                 if (dataSearch[key].relacja.includes(element4.id)) {
-                    const relacja = document.createElement("p")
-                    const demon_pod = document.createElement("p")
+                    const relacja = cloneTextTemplate.querySelector(".demonRelationTemplate")
+                    const demon_pod = cloneTextTemplate.querySelector(".subDemonTemplate")
                     relacja.textContent = element4.nazwa
                     demon_pod.textContent = element.demon_pod
-                    main.append(relacja, demon_pod)
                 }
             })
         }
+        main.appendChild(cloneTextTemplate)
     })
 }
 
